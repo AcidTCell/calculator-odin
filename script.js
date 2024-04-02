@@ -82,6 +82,7 @@ function handleClearClick(){
     firstNumber = '';
     operator = '';
     secondNumber = '';
+    updateDisplay(displayValue);
 
 }
 
