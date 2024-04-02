@@ -63,6 +63,28 @@ function handleOperatorClick(selectedOperator) {
     }
 }
 
+function handleEqualsClick() {
+    // If all necessary values are set, perform the operation
+    if (firstNumber !== '' && operator !== '' && displayValue !== '') {
+        secondNumber = parseFloat(displayValue);
+        const result = operate(operator, firstNumber, secondNumber);
+        // Update the display with the result
+        updateDisplay(result);
+        // Clear the stored values for the next operation
+        firstNumber = '';
+        operator = '';
+        secondNumber = '';
+    }
+}
+
+function handleClearClick(){
+    displayValue = '';
+    firstNumber = '';
+    operator = '';
+    secondNumber = '';
+
+}
+
 // Function to update the display element
 function updateDisplay(value) {
     // Get the display element
@@ -81,19 +103,9 @@ document.querySelectorAll('.number').forEach(button => {
     });
 });
 
-function handleEqualsClick() {
-    // If all necessary values are set, perform the operation
-    if (firstNumber !== '' && operator !== '' && displayValue !== '') {
-        secondNumber = parseFloat(displayValue);
-        const result = operate(operator, firstNumber, secondNumber);
-        // Update the display with the result
-        updateDisplay(result);
-        // Clear the stored values for the next operation
-        firstNumber = '';
-        operator = '';
-        secondNumber = '';
-    }
-}
+
+
+
 
 // Attach click event listeners to operator buttons
 document.querySelectorAll('.operator').forEach(button => {
@@ -105,3 +117,5 @@ document.querySelectorAll('.operator').forEach(button => {
 
 // Attach click event listener to equals button
 document.querySelector('.equals').addEventListener('click', handleEqualsClick);
+
+document.querySelector('.clear').addEventListener('click', handleClearClick);
