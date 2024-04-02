@@ -1,5 +1,5 @@
 *{
-    border: solid 1px black;
+    
 }
 
 .calculator {
@@ -14,11 +14,11 @@
 .display {
     width: calc(100% - 20px);
     height: 10vh;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
     padding: 5px;
     font-size: 5vh;
     text-align: right;
-    color: #d4d4d2;
+    color: #1c1c1c;
   }
   
 .buttons {
@@ -52,12 +52,15 @@ button.decimal{
   background-color: #505050;
   color: #d4d4d2;
 }
+
 button {
     flex: 0 0 calc(25% - 10px);
     margin: 5px;
     padding: 10px;
     font-size: 4vh;
     color: #1c1c1c;
+    border: none;
+    border-radius: 2px;
   }
 
 

@@ -16,18 +16,25 @@ const multiply = function(a,b) {
 
 
 function operate(operator,a,b){
+    let result;
     switch (operator) {
         case '+':
-            return add(a, b);
+            result = add(a, b);
+            break;
         case '-':
-            return subtract(a, b);
+            result = subtract(a, b);
+            break;
         case '*':
-            return multiply(a, b);
+            result = multiply(a, b);
+            break;
         case '/':
-            return divide(a, b);
+            result = divide(a, b);
+            break;
         default:
             return "Error: Invalid operator";
     }
+    result = Number(result.toFixed(5));
+    return result;
 }
 
 let displayValue = '';
