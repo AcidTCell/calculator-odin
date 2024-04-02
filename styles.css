@@ -43,6 +43,11 @@ button.operator{
   color: #d4d4d2;
 }
 
+button.operator.modulo{
+  background-color:white;
+  color:#1c1c1c;
+}
+
 button.equals{
   background-color: #ff9500;
   color: #d4d4d2;
@@ -64,7 +69,16 @@ button {
   }
 
 
-button:hover {
+button.number:hover {
     background-color: #727272;
+  }
+button.extra:hover {
+    background-color: #929292;
+  }
+button#modulo:hover{
+  background-color: #929292 ;
+  }
+button.operator:hover, button.equals:hover {
+    background-color: #c47200;
   }
   

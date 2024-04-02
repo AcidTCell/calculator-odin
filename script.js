@@ -14,6 +14,9 @@ const multiply = function(a,b) {
   return a*b;
 }
 
+const modulo = function(a,b){
+    return a%b;
+}
 
 function operate(operator,a,b){
     let result;
@@ -29,6 +32,9 @@ function operate(operator,a,b){
             break;
         case '/':
             result = divide(a, b);
+            break;
+        case '%':
+            result = modulo(a,b);
             break;
         default:
             return "Error: Invalid operator";
