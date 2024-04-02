@@ -8,6 +8,7 @@
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+    background-color: #1c1c1c;
   }
   
 .display {
@@ -23,19 +24,20 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+button.number {
+  background-color: #505050;
+  color: white;
+}
   
 button {
     flex: 0 0 calc(25% - 10px);
     margin: 5px;
     padding: 10px;
     font-size: 4vh;
-    background-color: #f0f0f0;
   }
   
 button:hover {
-    background-color: #e0e0e0;
+    background-color: #727272;
   }
   
-button:active {
-    background-color: #ccc;
-  }
