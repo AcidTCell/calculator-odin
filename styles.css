@@ -1,5 +1,33 @@
 *{
+  margin: 0;
+  border: solid 1px rgb(230, 35, 35);
     
+}
+
+
+body{
+  background-color: #dfdfdf;
+  height: 100vh;
+  
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  
+}
+#header{
+    display: flex;
+    background-color: #1c1c1c;
+    justify-content: center;
+}
+h1{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 6vh;
+  padding-left: 2vh;
 }
 
 .calculator {
@@ -12,7 +40,7 @@
   }
   
 .display {
-    width: calc(100% - 20px);
+    width: calc(100% - 12px);
     height: 10vh;
     margin-bottom: 3vh;
     padding: 5px;
@@ -81,4 +109,84 @@ button#modulo:hover{
 button.operator:hover, button.equals:hover {
     background-color: #c47200;
   }
+
+  .fifthlayer{
+    display: flex;  
+    justify-content: center;
+    padding: 20px 150px;
+    gap: 100px;
+    background-color:#505050;
+    font-family: 'Nunito', sans-serif;
+    
+    
+}
+.firstcolumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.secondcolumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.thirdcolumn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdcolumn img{
+    width: 120px;
+    transition: transform ease 300ms;
+    
+}
+.thirdcolumn img:hover {
+    transform: translate(0, -10px);
+    transform: scale(1.1);}
+
+.thirdcolumn a{
+    text-decoration: none;
+}
+.gplay img{
+    width: 135px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.headerflfc{
+    font-weight: bold;
+    color: black;
+  }
+
+.headerflsc{
+    font-weight: bold;
+    color: black;
+  }
+
+.headerfltc{
+    font-weight: bold;
+    color: black;
+  }
+
+
+  #footer{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vh;
+    background-color: #1c1c1c;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-weight: bold;
+    color: white;
+    margin-top: auto;
+    
+}
   
