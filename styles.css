@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  border: solid 1px black;
   
   
     
@@ -135,9 +136,7 @@ button.operator:hover, button.equals:hover {
     justify-content: space-between;
 }
 
-.thirdcolumn {
-    margin-left: 100px;
-}
+
 
 .thirdcolumn img {
     width: 120px;
@@ -181,5 +180,33 @@ a {
     color: white;
     margin-top: auto;
     
+}
+
+@media only screen and (max-width: 480px) {
+   {
+    width: 90%; 
+    margin: 5% auto; 
+  }
+
+  .display {
+    height: 8vh; 
+    font-size: 4vh; 
+  }
+
+  .buttons button {
+    padding: 5px; 
+    font-size: 3vh; 
+  }
+
+  .thirdlayer{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .secondcolumn{
+    text-align: center;
+  }
+
 }
   
