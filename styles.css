@@ -46,7 +46,8 @@ h1{
     padding: 5px;
     font-size: 5vh;
     text-align: right;
-    color: #1c1c1c;
+    color: #dfdfdf;
+    font-family: 'Nunito', sans-serif;
   }
   
 .buttons {
@@ -124,20 +125,20 @@ button.operator:hover, button.equals:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
 }
 .secondcolumn{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
 }
 .thirdcolumn{
     display: flex;
     flex-direction: column;
     margin-left: 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .thirdcolumn img{
