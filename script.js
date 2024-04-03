@@ -54,6 +54,15 @@ function handleNumberClick(number) {
     updateDisplay(displayValue);
 }
 
+function handlePlusMinusClick(){
+    if (displayValue !== ''){
+        let number = parseFloat(displayValue);
+        number = -number;
+        updateDisplay(number.toString());
+    }
+
+}
+
 function handleOperatorClick(selectedOperator) {
     if (firstNumber === '') {
         firstNumber = parseFloat(displayValue);
@@ -93,6 +102,7 @@ function handleClearClick(){
 // Function to update the display element
 function updateDisplay(value) {
     const display = document.querySelector('.display');
+    displayValue = value;
     display.value = value;
 }
 
@@ -119,3 +129,5 @@ document.querySelector('.equals').addEventListener('click', handleEqualsClick);
 
 //Same for clear button
 document.querySelector('.clear').addEventListener('click', handleClearClick);
+
+document.querySelector('.plusminus').addEventListener('click', handlePlusMinusClick);
