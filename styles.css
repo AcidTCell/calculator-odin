@@ -1,6 +1,7 @@
 *{
   margin: 0;
-  border: solid 1px rgb(230, 35, 35);
+  
+  
     
 }
 
@@ -40,13 +41,13 @@ h1{
   }
   
 .display {
-    width: calc(100% - 12px);
+    width: calc(100% - 17px);
     height: 10vh;
     margin-bottom: 3vh;
     padding: 5px;
     font-size: 5vh;
     text-align: right;
-    color: #dfdfdf;
+    color: #1c1c1c;
     font-family: 'Nunito', sans-serif;
   }
   
@@ -111,71 +112,60 @@ button.operator:hover, button.equals:hover {
     background-color: #c47200;
   }
 
-  .fifthlayer{
-    display: flex;  
-    justify-content: center;
+  .thirdlayer {
+    display: flex;
+    
+    justify-content: center; /* Ensure space between elements */
     padding: 20px 150px;
     gap: 100px;
-    background-color:#505050;
+    background-color: #2e2e2e;
     font-family: 'Nunito', sans-serif;
-    
-    
+    flex-grow: 1; /* Allow the third layer to grow and fill the remaining space */
 }
-.firstcolumn{
+
+.firstcolumn,
+.secondcolumn,
+.thirdcolumn {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
-}
-.secondcolumn{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
-}
-.thirdcolumn{
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    align-items: center;
+    align-items: center; /* Center align items */
     justify-content: space-between;
 }
 
-.thirdcolumn img{
+.thirdcolumn {
+    margin-left: 100px;
+}
+
+.thirdcolumn img {
     width: 120px;
     transition: transform ease 300ms;
-    
 }
-.thirdcolumn img:hover {
-    transform: translate(0, -10px);
-    transform: scale(1.1);}
 
-.thirdcolumn a{
+.thirdcolumn img:hover {
+    transform: translate(0, -10px) scale(1.1); /* Combine transforms */
+}
+
+.thirdcolumn a {
     text-decoration: none;
 }
-.gplay img{
+
+.gplay img {
     width: 135px;
 }
 
-a{
+a {
     text-decoration: none;
-    color: black;
+    color: #dfdfdf;
 }
 
-.headerflfc{
-    font-weight: bold;
-    color: black;
-  }
+.headerflfc,
+.headerflsc,
+.headerfltc {
+    font-weight: bolder;
+    color: #dfdfdf;
+}
 
-.headerflsc{
-    font-weight: bold;
-    color: black;
-  }
-
-.headerfltc{
-    font-weight: bold;
-    color: black;
-  }
 
 
   #footer{
