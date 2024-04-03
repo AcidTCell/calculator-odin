@@ -31,7 +31,7 @@ h1{
   font-family: 'Nunito', sans-serif;
   color: white;
   font-size: 6vh;
-  padding-left: 2vh;
+  
 }
 
 .calculator {
@@ -115,15 +115,14 @@ button.operator:hover, button.equals:hover {
     background-color: #c47200;
   }
 
-  .thirdlayer {
+.thirdlayer {
     display: flex;
-    
-    justify-content: center; /* Ensure space between elements */
+    justify-content: center; 
     padding: 20px 150px;
     gap: 100px;
     background-color: #2e2e2e;
     font-family: 'Nunito', sans-serif;
-    flex-grow: 1; /* Allow the third layer to grow and fill the remaining space */
+    flex-grow: 1; 
 }
 
 .firstcolumn,
@@ -132,7 +131,7 @@ button.operator:hover, button.equals:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center; /* Center align items */
+    align-items: center; 
     justify-content: space-between;
 }
 
@@ -144,7 +143,7 @@ button.operator:hover, button.equals:hover {
 }
 
 .thirdcolumn img:hover {
-    transform: translate(0, -10px) scale(1.1); /* Combine transforms */
+    transform: translate(0, -10px) scale(1.1); 
 }
 
 .thirdcolumn a {
@@ -165,6 +164,7 @@ a {
 .headerfltc {
     font-weight: bolder;
     color: #dfdfdf;
+    text-align: center;
 }
 
 
@@ -183,21 +183,6 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
-   {
-    width: 90%; 
-    margin: 5% auto; 
-  }
-
-  .display {
-    height: 8vh; 
-    font-size: 4vh; 
-  }
-
-  .buttons button {
-    padding: 5px; 
-    font-size: 3vh; 
-  }
-
   .thirdlayer{
     display: flex;
     flex-direction: column;
