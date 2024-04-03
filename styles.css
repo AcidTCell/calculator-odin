@@ -1,7 +1,7 @@
 *{
   margin: 0;
   
-  
+  border: 1px solid black
   
     
 }
@@ -132,10 +132,9 @@ button.operator:hover, button.equals:hover {
     flex-direction: column;
     gap: 10px;
     align-items: center; 
+    text-align: center;
     justify-content: space-between;
 }
-
-
 
 .thirdcolumn img {
     width: 120px;
