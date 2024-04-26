@@ -196,4 +196,12 @@ a {
 }
 
 }
+
+button.number:active,
+button.operator:active,
+button.equals:active,
+button.decimal:active,
+button.extra:active {
+  opacity: 0.7; 
+}
   
