@@ -2,6 +2,12 @@
   margin: 0;    
 }
 
+:root{
+  --main-text-color: white;
+  --lesser-white: #dfdfdf;
+  --button-grey: #d4d4d2;
+}
+
 
 body{
   background-color: #dfdfdf;
@@ -25,7 +31,7 @@ body{
 }
 h1{
   font-family: 'Nunito', sans-serif;
-  color: white;
+  color: var(--main-text-color);
   font-size: 6vh;
   
 }
@@ -57,7 +63,7 @@ h1{
 
 button.number {
   background-color: #505050;
-  color: white;
+  color: var(--main-text-color);
 }
 
 button#zero {
@@ -69,7 +75,7 @@ button#zero {
 
 button.operator{
   background-color:#ff9500;
-  color: #d4d4d2;
+  color: var(--button-grey);
 }
 
 button.operator.modulo{
@@ -79,12 +85,12 @@ button.operator.modulo{
 
 button.equals{
   background-color: #ff9500;
-  color: #d4d4d2;
+  color: var(--button-grey);
 }
 
 button.decimal{
   background-color: #505050;
-  color: #d4d4d2;
+  color: var(--button-grey);
 }
 
 button {
@@ -151,14 +157,14 @@ button.operator:hover, button.equals:hover {
 
 a {
     text-decoration: none;
-    color: #dfdfdf;
+    color: var(--lesser-white);
 }
 
 .headerflfc,
 .headerflsc,
 .headerfltc {
     font-weight: bolder;
-    color: #dfdfdf;
+    color: var(--lesser-white);
     text-align: center;
 }
 
@@ -172,7 +178,7 @@ a {
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
     font-weight: bold;
-    color: white;
+    color: var(--main-text-color);
     margin-top: auto;
     
 }
